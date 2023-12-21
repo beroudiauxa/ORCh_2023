@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@gitlab.coria-cfd.fr:orch/orch.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "ANDREA/devel"]
+	remote = origin
+	merge = refs/heads/ANDREA/devel
+[branch "ANDREA/master"]
+	remote = origin
+	merge = refs/heads/ANDREA/master

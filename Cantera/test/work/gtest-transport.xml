@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="10" failures="0" disabled="0" errors="0" timestamp="2018-11-15T17:32:06" time="1.149" name="AllTests">
+  <testsuite name="TransportFromScratch" tests="6" failures="0" disabled="0" errors="0" time="1.108">
+    <testcase name="binaryDiffCoeffs" status="run" time="1.092" classname="TransportFromScratch" />
+    <testcase name="mixDiffCoeffs" status="run" time="0.003" classname="TransportFromScratch" />
+    <testcase name="viscosity" status="run" time="0.002" classname="TransportFromScratch" />
+    <testcase name="thermalConductivityMix" status="run" time="0.003" classname="TransportFromScratch" />
+    <testcase name="multiDiffCoeffs" status="run" time="0.003" classname="TransportFromScratch" />
+    <testcase name="thermalConductivityMulti" status="run" time="0.003" classname="TransportFromScratch" />
+  </testsuite>
+  <testsuite name="SimpleTransportTest" tests="2" failures="0" disabled="0" errors="0" time="0.023">
+    <testcase name="fromScratch" status="run" time="0.018" classname="SimpleTransportTest" />
+    <testcase name="fromXML" status="run" time="0.005" classname="SimpleTransportTest" />
+  </testsuite>
+  <testsuite name="WaterTransportTest" tests="2" failures="0" disabled="0" errors="0" time="0.018">
+    <testcase name="viscosity" status="run" time="0.017" classname="WaterTransportTest" />
+    <testcase name="thermal_conductivity" status="run" time="0.001" classname="WaterTransportTest" />
+  </testsuite>
+</testsuites>

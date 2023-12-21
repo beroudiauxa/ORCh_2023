@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="33" failures="0" disabled="0" errors="0" timestamp="2018-11-15T17:31:47" time="0.025" name="AllTests">
+  <testsuite name="parseCompString" tests="11" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="space_separated" status="run" time="0" classname="parseCompString" />
+    <testcase name="comma_separated" status="run" time="0" classname="parseCompString" />
+    <testcase name="extra_spaces" status="run" time="0" classname="parseCompString" />
+    <testcase name="name_with_colon" status="run" time="0" classname="parseCompString" />
+    <testcase name="name_with_final_colon" status="run" time="0" classname="parseCompString" />
+    <testcase name="default_values" status="run" time="0" classname="parseCompString" />
+    <testcase name="delimiters" status="run" time="0" classname="parseCompString" />
+    <testcase name="missing_element" status="run" time="0" classname="parseCompString" />
+    <testcase name="not_a_number" status="run" time="0" classname="parseCompString" />
+    <testcase name="missing_value" status="run" time="0" classname="parseCompString" />
+    <testcase name="missing_last_value" status="run" time="0" classname="parseCompString" />
+  </testsuite>
+  <testsuite name="AnyValue" tests="2" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="is_copyable" status="run" time="0" classname="AnyValue" />
+    <testcase name="is_moveable" status="run" time="0" classname="AnyValue" />
+  </testsuite>
+  <testsuite name="AnyMap" tests="4" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="paths" status="run" time="0" classname="AnyMap" />
+    <testcase name="map_conversion" status="run" time="0" classname="AnyMap" />
+    <testcase name="nested" status="run" time="0" classname="AnyMap" />
+    <testcase name="vector" status="run" time="0" classname="AnyMap" />
+  </testsuite>
+  <testsuite name="BandMatrixTest" tests="5" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="matrix_times_vector" status="run" time="0" classname="BandMatrixTest" />
+    <testcase name="vector_times_matrix" status="run" time="0" classname="BandMatrixTest" />
+    <testcase name="solve_linear_system" status="run" time="0" classname="BandMatrixTest" />
+    <testcase name="oneNorm" status="run" time="0" classname="BandMatrixTest" />
+    <testcase name="checkRowsColumns" status="run" time="0" classname="BandMatrixTest" />
+  </testsuite>
+  <testsuite name="DenseMatrixTest" tests="7" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="matrix_times_vector" status="run" time="0" classname="DenseMatrixTest" />
+    <testcase name="matrix_times_matrix" status="run" time="0" classname="DenseMatrixTest" />
+    <testcase name="solve_single_rhs" status="run" time="0" classname="DenseMatrixTest" />
+    <testcase name="solve_multi_rhs" status="run" time="0" classname="DenseMatrixTest" />
+    <testcase name="increment" status="run" time="0" classname="DenseMatrixTest" />
+    <testcase name="invert_full" status="run" time="0" classname="DenseMatrixTest" />
+    <testcase name="invert_partial" status="run" time="0" classname="DenseMatrixTest" />
+  </testsuite>
+  <testsuite name="Polyfit" tests="3" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="exact_fit" status="run" time="0" classname="Polyfit" />
+    <testcase name="sequential" status="run" time="0" classname="Polyfit" />
+    <testcase name="weighted" status="run" time="0" classname="Polyfit" />
+  </testsuite>
+  <testsuite name="XML_Node" tests="1" failures="0" disabled="0" errors="0" time="0.024">
+    <testcase name="read_write" status="run" time="0.024" classname="XML_Node" />
+  </testsuite>
+</testsuites>

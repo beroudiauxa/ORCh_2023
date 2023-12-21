@@ -1,0 +1,57 @@
+"""Minimal Python Module"""
+from buildutils import *
+
+Import('env', 'build', 'install')
+
+localenv = env.Clone()
+
+make_setup = build(localenv.SubstFile('setup.py', 'setup.py.in'))
+
+# copy scripts from the full Cython module
+for script in ['ctml_writer', 'ck2cti']:
+    # The actual script
+    s = build(env.Command('cantera/{}.py'.format(script),
+                          '#interfaces/cython/cantera/{}.py'.format(script),
+                          Copy('$TARGET', '$SOURCE')))
+    localenv.Depends(make_setup, s)
+
+build_cmd = ('cd interfaces/python_minimal &&'
+             ' $python_cmd_esc setup.py build --build-lib=../../build/python')
+
+mod = build(localenv.Command('#build/python/cantera/__init__.py', 'setup.py',
+                             build_cmd))
+env['python_module'] = mod
+
+if localenv['PYTHON_INSTALLER'] == 'direct':
+    if localenv['python_prefix'] == 'USER':
+        # Install to the OS-dependent user site-packages directory
+        extra = '--user'
+        if localenv['OS'] == 'Darwin':
+            extra += ' --prefix=""'
+    elif localenv['python_prefix']:
+        # A specific location for the Cantera python module has been given
+        extra = '--user'
+        if localenv['OS'] == 'Darwin':
+            extra += ' --prefix=""'
+        localenv.AppendENVPath(
+            'PYTHONUSERBASE',
+            normpath(localenv.subst('$python_prefix'))
+        )
+    else:
+        # Install Python module in the default location
+        extra = ''
+    mod_inst = install(localenv.Command, 'dummy', mod,
+                       build_cmd + ' install ' + extra +
+                       ' --record=../../build/python-installed-files.txt' +
+                       ' --single-version-externally-managed')
+    global_env = env
+    def find_module_dir(target, source, env):
+        check = pjoin('cantera', '__init__.py')
+        for filename in open('build/python-installed-files.txt').readlines():
+            filename = filename.strip()
+            if filename.endswith(check):
+                filename = filename.replace(check, '')
+                global_env['python_module_loc'] = normpath(filename)
+                break
+    localenv.AlwaysBuild(localenv.AddPostAction(mod_inst, find_module_dir))
+    env['install_python_action'] = mod_inst

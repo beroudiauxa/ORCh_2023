@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="64" failures="0" disabled="1" errors="0" timestamp="2018-11-15T17:31:47" time="7.088" name="AllTests">
+  <testsuite name="MaskellSolidSolnPhase_Test" tests="7" failures="0" disabled="0" errors="0" time="0.076">
+    <testcase name="construct_from_xml" status="run" time="0.075" classname="MaskellSolidSolnPhase_Test" />
+    <testcase name="chem_potentials" status="run" time="0" classname="MaskellSolidSolnPhase_Test" />
+    <testcase name="partialMolarVolumes" status="run" time="0.001" classname="MaskellSolidSolnPhase_Test" />
+    <testcase name="activityCoeffs" status="run" time="0" classname="MaskellSolidSolnPhase_Test" />
+    <testcase name="standardConcentrations" status="run" time="0" classname="MaskellSolidSolnPhase_Test" />
+    <testcase name="activityConcentrations" status="run" time="0" classname="MaskellSolidSolnPhase_Test" />
+    <testcase name="fromScratch" status="run" time="0" classname="MaskellSolidSolnPhase_Test" />
+  </testsuite>
+  <testsuite name="RedlichKister_Test" tests="7" failures="0" disabled="0" errors="0" time="0.004">
+    <testcase name="construct_from_xml" status="run" time="0.003" classname="RedlichKister_Test" />
+    <testcase name="chem_potentials" status="run" time="0" classname="RedlichKister_Test" />
+    <testcase name="dlnActivities" status="run" time="0" classname="RedlichKister_Test" />
+    <testcase name="activityCoeffs" status="run" time="0" classname="RedlichKister_Test" />
+    <testcase name="standardConcentrations" status="run" time="0" classname="RedlichKister_Test" />
+    <testcase name="activityConcentrations" status="run" time="0.001" classname="RedlichKister_Test" />
+    <testcase name="fromScratch" status="run" time="0" classname="RedlichKister_Test" />
+  </testsuite>
+  <testsuite name="RedlichKwongMFTP_Test" tests="6" failures="0" disabled="0" errors="0" time="1.196">
+    <testcase name="construct_from_cti" status="run" time="1.193" classname="RedlichKwongMFTP_Test" />
+    <testcase name="chem_potentials" status="run" time="0" classname="RedlichKwongMFTP_Test" />
+    <testcase name="activityCoeffs" status="run" time="0.001" classname="RedlichKwongMFTP_Test" />
+    <testcase name="standardConcentrations" status="run" time="0.001" classname="RedlichKwongMFTP_Test" />
+    <testcase name="activityConcentrations" status="run" time="0.001" classname="RedlichKwongMFTP_Test" />
+    <testcase name="setTP" status="run" time="0" classname="RedlichKwongMFTP_Test" />
+  </testsuite>
+  <testsuite name="TestThermoMethods" tests="3" failures="0" disabled="0" errors="0" time="0.022">
+    <testcase name="getMoleFractionsByName" status="run" time="0.02" classname="TestThermoMethods" />
+    <testcase name="getMassFractionsByName" status="run" time="0.001" classname="TestThermoMethods" />
+    <testcase name="setState_nan" status="run" time="0.001" classname="TestThermoMethods" />
+  </testsuite>
+  <testsuite name="NasaPoly1Test" tests="3" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="Initialization" status="run" time="0" classname="NasaPoly1Test" />
+    <testcase name="updateProperties" status="run" time="0" classname="NasaPoly1Test" />
+    <testcase name="updatePropertiesTemp" status="run" time="0" classname="NasaPoly1Test" />
+  </testsuite>
+  <testsuite name="Nasa9Test" tests="1" failures="0" disabled="0" errors="0" time="0.038">
+    <testcase name="Nasa9Thermo" status="run" time="0.038" classname="Nasa9Test" />
+  </testsuite>
+  <testsuite name="FixedChemPotSstpConstructorTest" tests="2" failures="0" disabled="0" errors="0" time="0.009">
+    <testcase name="fromXML" status="run" time="0.009" classname="FixedChemPotSstpConstructorTest" />
+    <testcase name="SimpleConstructor" status="run" time="0" classname="FixedChemPotSstpConstructorTest" />
+  </testsuite>
+  <testsuite name="IonsFromNeutralConstructor" tests="2" failures="0" disabled="0" errors="0" time="0.029">
+    <testcase name="fromXML" status="run" time="0.029" classname="IonsFromNeutralConstructor" />
+    <testcase name="fromScratch" status="run" time="0" classname="IonsFromNeutralConstructor" />
+  </testsuite>
+  <testsuite name="CtiConversionTest" tests="2" failures="0" disabled="0" errors="0" time="2.168">
+    <testcase name="ExplicitConversion" status="run" time="1.088" classname="CtiConversionTest" />
+    <testcase name="ImplicitConversion" status="run" time="1.08" classname="CtiConversionTest" />
+  </testsuite>
+  <testsuite name="ChemkinConversionTest" tests="3" failures="0" disabled="0" errors="0" time="3.398">
+    <testcase name="ValidConversion" status="run" time="2.216" classname="ChemkinConversionTest" />
+    <testcase name="MissingInputFile" status="run" time="0.088" classname="ChemkinConversionTest" />
+    <testcase name="FailedConversion" status="run" time="1.094" classname="ChemkinConversionTest" />
+  </testsuite>
+  <testsuite name="ConstructFromScratch" tests="6" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="AddElements" status="run" time="0" classname="ConstructFromScratch" />
+    <testcase name="throwUndefindElements" status="run" time="0" classname="ConstructFromScratch" />
+    <testcase name="ignoreUndefinedElements" status="run" time="0" classname="ConstructFromScratch" />
+    <testcase name="addUndefinedElements" status="run" time="0" classname="ConstructFromScratch" />
+    <testcase name="RedlichKwongMFTP" status="run" time="0" classname="ConstructFromScratch" />
+    <testcase name="IdealSolnGasVPSS_gas" status="run" time="0.001" classname="ConstructFromScratch" />
+  </testsuite>
+  <testsuite name="PureFluidFromScratch" tests="1" failures="0" disabled="0" errors="0" time="0.013">
+    <testcase name="CarbonDioxide" status="run" time="0.013" classname="PureFluidFromScratch" />
+  </testsuite>
+  <testsuite name="WaterSSTP" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="fromScratch" status="run" time="0" classname="WaterSSTP" />
+  </testsuite>
+  <testsuite name="IdealMolalSoln" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="fromScratch" status="run" time="0" classname="IdealMolalSoln" />
+  </testsuite>
+  <testsuite name="DebyeHuckel" tests="1" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="fromScratch" status="run" time="0.001" classname="DebyeHuckel" />
+  </testsuite>
+  <testsuite name="MargulesVPSSTP" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="fromScratch" status="run" time="0" classname="MargulesVPSSTP" />
+  </testsuite>
+  <testsuite name="LatticeSolidPhase" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="fromScratch" status="run" time="0" classname="LatticeSolidPhase" />
+  </testsuite>
+  <testsuite name="IdealSolidSolnPhase" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="fromScratch" status="run" time="0" classname="IdealSolidSolnPhase" />
+  </testsuite>
+  <testsuite name="HMWSoln" tests="2" failures="0" disabled="0" errors="0" time="0.005">
+    <testcase name="fromScratch" status="run" time="0.001" classname="HMWSoln" />
+    <testcase name="fromScratch_HKFT" status="run" time="0.004" classname="HMWSoln" />
+  </testsuite>
+  <testsuite name="PDSS_SSVol" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="fromScratch" status="run" time="0" classname="PDSS_SSVol" />
+  </testsuite>
+  <testsuite name="SpeciesThermoInterpTypeTest" tests="4" failures="0" disabled="1" errors="0" time="0.125">
+    <testcase name="install_const_cp" status="run" time="0.09" classname="SpeciesThermoInterpTypeTest" />
+    <testcase name="DISABLED_install_bad_pref" status="notrun" time="0" classname="SpeciesThermoInterpTypeTest" />
+    <testcase name="install_nasa" status="run" time="0.035" classname="SpeciesThermoInterpTypeTest" />
+    <testcase name="install_shomate" status="run" time="0" classname="SpeciesThermoInterpTypeTest" />
+  </testsuite>
+  <testsuite name="Shomate" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="modifyOneHf298" status="run" time="0" classname="Shomate" />
+  </testsuite>
+  <testsuite name="WaterPropsIAPWSphi_Test" tests="2" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="check1" status="run" time="0" classname="WaterPropsIAPWSphi_Test" />
+    <testcase name="check2" status="run" time="0" classname="WaterPropsIAPWSphi_Test" />
+  </testsuite>
+  <testsuite name="WaterPropsIAPWS_Test" tests="5" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="triple_point_liquid" status="run" time="0" classname="WaterPropsIAPWS_Test" />
+    <testcase name="triple_point_gas" status="run" time="0" classname="WaterPropsIAPWS_Test" />
+    <testcase name="normal_boiling_point" status="run" time="0" classname="WaterPropsIAPWS_Test" />
+    <testcase name="saturation_pressure_estimate" status="run" time="0" classname="WaterPropsIAPWS_Test" />
+    <testcase name="expansion_coeffs" status="run" time="0.002" classname="WaterPropsIAPWS_Test" />
+  </testsuite>
+</testsuites>

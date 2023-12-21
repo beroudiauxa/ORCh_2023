@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="33" failures="0" disabled="3" errors="0" timestamp="2018-11-15T17:31:55" time="1.911" name="AllTests">
+  <testsuite name="OverconstrainedEquil" tests="5" failures="0" disabled="2" errors="0" time="0.095">
+    <testcase name="ChemEquil" status="run" time="0.095" classname="OverconstrainedEquil" />
+    <testcase name="VcsNonideal" status="run" time="0" classname="OverconstrainedEquil" />
+    <testcase name="DISABLED_MultiphaseEquil" status="notrun" time="0" classname="OverconstrainedEquil" />
+    <testcase name="BasisOptimize" status="run" time="0" classname="OverconstrainedEquil" />
+    <testcase name="DISABLED_BasisOptimize2" status="notrun" time="0" classname="OverconstrainedEquil" />
+  </testsuite>
+  <testsuite name="GriMatrix" tests="12" failures="0" disabled="1" errors="0" time="1.374">
+    <testcase name="ChemEquil_CH4_N2" status="run" time="0.01" classname="GriMatrix" />
+    <testcase name="ChemEquil_O2_N2" status="run" time="0.01" classname="GriMatrix" />
+    <testcase name="ChemEquil_CH4_O2_N2" status="run" time="0.008" classname="GriMatrix" />
+    <testcase name="ChemEquil_CH4_O2" status="run" time="0.174" classname="GriMatrix" />
+    <testcase name="MultiPhase_CH4_N2" status="run" time="0.01" classname="GriMatrix" />
+    <testcase name="MultiPhase_O2_N2" status="run" time="0.008" classname="GriMatrix" />
+    <testcase name="MultiPhase_CH4_O2_N2" status="run" time="0.079" classname="GriMatrix" />
+    <testcase name="DISABLED_MultiPhase_CH4_O2" status="notrun" time="0" classname="GriMatrix" />
+    <testcase name="VcsNonideal_CH4_N2" status="run" time="0.025" classname="GriMatrix" />
+    <testcase name="VcsNonideal_O2_N2" status="run" time="0.009" classname="GriMatrix" />
+    <testcase name="VcsNonideal_CH4_O2_N2" status="run" time="0.024" classname="GriMatrix" />
+    <testcase name="VcsNonideal_CH4_O2" status="run" time="1.014" classname="GriMatrix" />
+  </testsuite>
+  <testsuite name="PropertyPairs" tests="16" failures="0" disabled="0" errors="0" time="0.442">
+    <testcase name="ChemEquil_TP" status="run" time="0.007" classname="PropertyPairs" />
+    <testcase name="MultiPhase_TP" status="run" time="0.076" classname="PropertyPairs" />
+    <testcase name="VcsNonideal_TP" status="run" time="0.009" classname="PropertyPairs" />
+    <testcase name="ChemEquil_HP" status="run" time="0.008" classname="PropertyPairs" />
+    <testcase name="MultiPhase_HP" status="run" time="0.013" classname="PropertyPairs" />
+    <testcase name="VcsNonideal_HP" status="run" time="0.016" classname="PropertyPairs" />
+    <testcase name="ChemEquil_SP" status="run" time="0.006" classname="PropertyPairs" />
+    <testcase name="MultiPhase_SP" status="run" time="0.01" classname="PropertyPairs" />
+    <testcase name="VcsNonideal_SP" status="run" time="0.012" classname="PropertyPairs" />
+    <testcase name="ChemEquil_SV" status="run" time="0.008" classname="PropertyPairs" />
+    <testcase name="VcsNonideal_SV" status="run" time="0.033" classname="PropertyPairs" />
+    <testcase name="ChemEquil_TV" status="run" time="0.007" classname="PropertyPairs" />
+    <testcase name="MultiPhase_TV" status="run" time="0.144" classname="PropertyPairs" />
+    <testcase name="VcsNonideal_TV" status="run" time="0.01" classname="PropertyPairs" />
+    <testcase name="ChemEquil_UV" status="run" time="0.008" classname="PropertyPairs" />
+    <testcase name="VcsNonideal_UV" status="run" time="0.073" classname="PropertyPairs" />
+  </testsuite>
+</testsuites>
