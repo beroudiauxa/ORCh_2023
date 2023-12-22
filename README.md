@@ -87,7 +87,7 @@ ORCh uses the 2.4 version of Cantera https://cantera.org/blog/cantera-240-releas
 
 
 - Tensorflow C api 1.15
-  - download 1.15 version cpu only
+  - download 1.15 version cpu only : https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-1.15.0.tar.gz
   - untar it
 
 
