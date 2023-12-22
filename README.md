@@ -123,7 +123,7 @@ The following steps must be completed before you can use ORCh:
 
 If you downloaded openmpi and hdf5, you need to add these lines in the set_orch_env.sh file, putting the right paths (then you need to re do a "source set_orch_env.sh") :
 
-- <code>export MPI_HOME="/home/username/opt/openmpi</code>
+- <code>export MPI_HOME="/home/username/opt/openmpi"</code>
 - <code>export MPI_INC="$MPI_HOME/include"</code>
 - <code>export MPI_LIB="$MPI_HOME/lib"</code>
 - <code>export MPI_BIN="$MPI_HOME/bin"</code>
