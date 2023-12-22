@@ -12,9 +12,9 @@ export SUNDIALS_INC="/path/to/sundials/include"
 export SUNDIALS_LIB="/path/to/sundials/lib"
 export EIGEN_INC="/path/to/eigen"
 export TENSORFLOW_CAPI_PATH="/path/to/tensorflow"
-export OPENCV_PATH="/path/to/opencv"
+export OPENCV_PATH="/path/to/opencv/folder"
 #
-# Do not touch
+# Do not touch from this line
 #
 script_path="$(dirname -- "${BASH_SOURCE[0]}")"            # relative
 script_path="$(cd -- "$MY_PATH" && pwd)"    # absolutized and normalized
@@ -39,3 +39,9 @@ export CT_INC="${ORCH_BASE}Cantera_lib/include"
 export CT_LIB="${ORCH_BASE}Cantera_lib/lib"
 #
 export LD_LIBRARY_PATH="${ORCH_BASE}:${LD_LIBRARY_PATH}"
+export LD_LIBRARY_PATH="${SUNDIALS_LIB}:${LD_LIBRARY_PATH}"
+export LIBRARY_PATH="${LIBRARY_PATH}:${OPENCV_PATH}/lib"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${OPENCV_PATH}/lib"
+export LIBRARY_PATH="${LIBRARY_PATH}:${TENSORFLOW_CAPI_PATH}/lib"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${TENSORFLOW_CAPI_PATH}/lib"
+
