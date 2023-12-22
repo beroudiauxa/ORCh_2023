@@ -153,6 +153,8 @@ If any library problem occurs during make:
    - go to workdir/ORCh_IFPEN-ORCh/Cantera/user
    - make clean
    - make
+- c++ errors
+   - try to add the compilation option -std=c++11 in all Makefile files from ORCh_IFPEN-ORCh/ORCh/cantera, drgep, lumping, main, exe, optimisation and tools
 
 
 # Running ORCh
